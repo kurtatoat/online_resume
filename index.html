@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header .left {
+            flex: 1;
+            text-align: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .header .right {
+            flex: 2;
+            text-align: left;
+        }
+        .header .right h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .header .right p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .divider {
+            width: 1px;
+            background-color: #ccc;
+            height: auto;
+        }
+        .left-col {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .right-col {
+            flex: 2;
+            padding-left: 10px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 5px 0;
+            color: #666;
+        }
+        .skills {
+            margin-top: 20px;
+        }
+        .skill {
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            font-weight: bold;
+            color: #333;
+        }
+        .skill-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            background-color: #3498db;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header img {
+                width: 150px;
+                height: 150px;
+            }
+            .header .right {
+                text-align: center;
+            }
+            .header .right h1 {
+                font-size: 2em;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .divider {
+                display: none;
+            }
+            .section h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <img src="kurtimg.png" alt="Profile Picture">
+            </div>
+            <div class="right">
+                <h1>Kurt Cyrus F. Atoat</h1>
+                <p>An aspiring editor who has proficiencies in different editing areas including graphic editing, multimedia editing, photo manipulation, etc.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-col"> 
+                <div class="section contact">
+                    <h2>Contact Information</h2>
+                    <ul class="contact-info">
+                        <li>Email: kurtatoat37@gmail.com</li>
+                        <li>Phone: 09915200727</li>
+                        <li>LinkedIn: linkedin.com/in/kurtcyrs</li>
+                    </ul>
+                </div>
+                <div class="section contact">
+                    <h2>Personal Information</h2>
+                    <ul class="contact-info">
+                        <li>Birthdate: October 2, 2004</li>
+                        <li>Age: 19</li>
+                        <li>Sex: Male</li>
+                        <li>Place: Lucena City</li>
+                        <li>Religion: Catholic</li>
+                        <li>Language: English, Filipino</li>
+                    </ul>
+                </div>
+                <div class="section skills"> 
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <div class="skill-name" style="padding-bottom: 5px;">Multimedia Editing</div>
+                        <div class="skill-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name" style="padding-bottom: 5px;">Python Programming</div>
+                        <div class="skill-bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name" style="padding-bottom: 5px;">Web Development</div>
+                        <div class="skill-bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name" style="padding-bottom: 5px;">Database Management</div>
+                        <div class="skill-bar">
+                            <span style="width: 45%;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section references"> 
+                    <h2>References</h2>
+                    <ul>
+                        <li>Random person</li>
+                        <li>Random person</li>
+                        <li>Random person</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="right-col"> 
+                <div class="section experience">
+                    <h2>Experience</h2>
+                    <div class="job">
+                        <h3 style="margin-bottom: 0px;">Graphic Design Editor at Teehub-Cavite</h3>
+                        <p style="margin-top: 0px;">From 2021 - To 2022</p>
+                        <p>Designing and Editing different tshirt designs.</p>
+                    </div>
+                </div>
+
+                <div class="section education"> 
+                    <h2>Education</h2>
+                    <div>
+                        <h3 style="margin-bottom: 0px;">Dalubhasaan ng Lungsod ng Lucena</h3>
+                        <p style="margin-top: 0px;">2022 - Present</p>
+                        <p>Currently taking mastery in different information technology areas.</p>
+
+                        <h3 style="margin-bottom: 0px;">STI College Lucena</h3>
+                        <p style="margin-top: 0px;">2020 - 2022</p>
+                        <p>Took ICT course, specifically in Mobile Application and Web Development.</p>
+
+                        <h3 style="margin-bottom: 0px;">Quezon National High School</h3>
+                        <p style="margin-top: 0px;">2016 - 2020</p>
+                        <p>Took Special Program in Journalism course where I started to enhance my editing and publishing skills.</p>
+
+                        <h3 style="margin-bottom: 0px;">Salinas Elementary School</h3>
+                        <p style="margin-top: 0px;">2010 - 2016</p>
+                    </div>
+                </div>
+
+                <div class="section certificates"> 
+                    <h2>Certificates and Achievements</h2>
+                    <ul>
+                        <li>UI/UX Innovation</li>
+                        <li>Social Media Branding</li>
+                        <li>Hardware Oddysey as Instructor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
